@@ -1,0 +1,18 @@
+p {
+    font-family: sans-serif;
+    font-size: medium;
+    color: pink;
+    background-color: rgb(73, 73, 73);
+}
+
+body {
+    background-color: pink;
+}
+
+input {
+    color: pink;
+}
+
+label {
+    color: rgb(73, 73, 73);
+}

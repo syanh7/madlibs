@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Make your Madlib!</title>
+  <link rel = "stylesheet" href="static/madlibs.css"></link>
+</head>
+<body>
+  <form action="/madlib">
+
+    <p>Enter a person:</p>
+    <input type="text" name="person">
+    <br>
+
+    <p>Choose a color:</p>
+    <select name="color">
+    {% for color in colors %}
+        <option value={{color}} name="color">{{color}}</option>
+    {% endfor %}
+    </select>
+    <br>
+
+    <p>Select an animal:</p>
+    {% for animal in animals%}
+        <input type="radio" name="noun" value="{{animal}}">
+        <label>{{animal}}</label>
+    {% endfor %}
+    <br>
+
+    <p>Select a drink:</p>
+    {% for drink in drinks%}
+      <input type="radio" name="drink" value="{{drink}}">
+      <label>{{drink}}</label>
+    {% endfor %} 
+    <br>
+
+    <p>Select your favorite cleaning product:</p>
+    {% for cloth in cloths%}
+      <input type="radio" name="cloth" value="{{cloth}}">
+      <label>{{cloth}}</label>
+    {% endfor %} 
+    <br>
+
+    <p>Select your favorite random objects:</p>
+    {% for object in extinguishers%}
+      <input type="checkbox" name="extinguishers" value="{{object}}">
+      <label>{{object}}</label>
+    {% endfor %}
+    <br>
+    <p>Enter an adjective:</p>
+    <input type="text" name="adjective">
+    <br>
+
+
+    <input type="submit">
+  </form>
+</body>
+</html>

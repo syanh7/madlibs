@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Madlib!</title>
+  <link rel = "stylesheet" href="static/madlibs.css"></link>
+</head>
+<body>
+<p>
+There once was a {{ color }} {{noun}}
+sitting in the Hackbright Lab drinking {{drink}}.
+When {{ person }} went to pick it up, it burst into flames in a totally
+{{ adjective }} way. Then {{person}} extinguished the fire with
+{{extinguishers.pop(0)}}
+{% for item in extinguishers%} 
+and
+{{item}}
+{% endfor %}
+and cleaned up with a {{cloth}}.
+</p>
+</body>
+</html>
